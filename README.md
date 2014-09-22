@@ -21,9 +21,13 @@ The dataset is then reduced to contain Subject_ID, ActivityCode, and only those 
 
 Descriptive activity labels (e.g. "WALKING") are added to the dataset.
 
-Although commented out in the current script, a check for missing values was performed at this juncture. No missing values were found. 
+Although commented out in the current script, a check for NA values was performed at this juncture. 
 
-(This code was run: all(colSums(is.na(MeanStdDevSub))==0); returned [1] TRUE)
+This code was run: 
+    >all(colSums(is.na(MeanStdDevSub))==0)
+    [1] TRUE) 
+    
+    No NA values were found.
 
 Finally, the dataset was consolidated via the aggregate function to compute means of all measurement variables by each unique Subject_ID-Activity combination, and output to a space-delimited text file.
 
