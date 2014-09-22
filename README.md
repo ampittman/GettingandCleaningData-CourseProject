@@ -24,7 +24,8 @@ Descriptive activity labels (e.g. "WALKING") are added to the dataset.
 Although commented out in the current script, a check for NA values was performed at this juncture. 
 
 This code was run: 
-    >all(colSums(is.na(MeanStdDevSub))==0)
+    all(colSums(is.na(MeanStdDevSub))==0)
+    
     [1] TRUE 
     
     No NA values were found.
