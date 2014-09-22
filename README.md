@@ -25,7 +25,7 @@ Although commented out in the current script, a check for NA values was performe
 
 This code was run: 
     >all(colSums(is.na(MeanStdDevSub))==0)
-    [1] TRUE) 
+    [1] TRUE 
     
     No NA values were found.
 
